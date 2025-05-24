@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: #ffffff;
+            overflow: hidden;
+            flex-wrap: wrap;
+        }
+
+        aside {
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        aside li {
+            padding: 8px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        aside a {
+            text-decoration: none;
+            color: #000000;
+            display: block;
+        }
+
+        aside a:hover {
+            color: #4a96ff;
+        }
+
+        main {
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        @media (min-width: 801px) {
+            aside {
+                width: 25%;
+                order: 1;
+            }
+
+            main {
+                width: 75%;
+                order: 2;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 800px) {
+            .container {
+                flex-direction: column;
+            }
+
+            aside {
+                width: 100%;
+                order: 2;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+            }
+
+            aside>div {
+                width: 48%;
+            }
+
+            main {
+                width: 100%;
+                order: 1;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+
+            aside {
+                width: 100%;
+                order: 2;
+                margin-top: 20px;
+            }
+
+            aside>div {
+                margin-bottom: 15px;
+            }
+
+            main {
+                width: 100%;
+                order: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div>
+                <h2>Содержание</h2>
+                <ul>
+                    <li><a href="#introduction">Введение</a></li>
+                    <li><a href="#appearance">Внешний вид</a></li>
+                    <li><a href="#character">Характер</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Ключевые слова</h2>
+                <ul>
+                    <li><a href="#">Кошка</a></li>
+                    <li><a href="#">Шерсть</a></li>
+                    <li><a href="#">Порода</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main>
+            <h2 id="introduction">Персидская кошка</h2>
+            <p>Персидская кошка считается одной из самых популярных и узнаваемых пород в мире. История породы до сих пор
+                вызывает споры у специалистов.</p>
+
+            <h2 id="appearance">Внешний вид персидской кошки</h2>
+            <p>Воплощение грации и элегантности. Отличительные черты — крупная круглая голова с плоской мордочкой,
+                большие выразительные глаза.</p>
+
+            <h2 id="character">Характер и поведение</h2>
+            <p>Известны своим спокойным и уравновешенным характером. Они идеально подходят для тихой домашней жизни.</p>
+        </main>
+    </div>
+</body>
+
+</html>

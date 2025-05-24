@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошачий флешмоб</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            background-color: rgb(255, 206, 249);
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        nav a,
+        div a {
+            color: rgb(129, 18, 115);
+        }
+
+        h1 {
+            font-size: 100px;
+            margin: 20px 0px;
+        }
+
+        img {
+            max-width: 150px;
+            margin: 10px 20px 10px 10px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            gap: 40px;
+            margin-top: 20px;
+            align-items: flex-start;
+        }
+
+        .info-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            flex: 1;
+        }
+
+
+        @media (max-width: 600px) {
+            .content-wrapper {
+                gap: 20px;
+            }
+
+            .info-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="">Главная</a> /
+        <a href="">Статьи</a> /
+    </nav>
+    <h1>Кошачий флешмоб с фото/видео ваших питомцев</h1>
+
+    <div class="content-wrapper">
+        <img src="Иконка.png" alt="Кошачий флешмоб">
+
+        <div class="info-container">
+            <div>
+                <p>Обновлено</p>
+                <a href="">20 мая, 2025</a>
+            </div>
+            <div>
+                <p>Автор</p>
+                <a href="">Кошкина Алиса</a>
+            </div>
+            <div>
+                <p>49 комментариев</p>
+                <a href="">Посмотреть комментарии</a>
+            </div>
+            <div>
+                <p>Опубликовано</p>
+                <a href="">21 мая, 2024</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
