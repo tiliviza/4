@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+AU+SA&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: "Raleway", sans-serif;
+            font-size: 17px;
+            margin: 0;
+            color: black;
+            letter-spacing: 0.5px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        a {
+            font-family: "Raleway", sans-serif;
+            /*text-decoration: underline;*/
+            text-decoration: none;
+            font-weight: 300;
+            font-size: 18px;
+            color: rgba(5, 35, 60, 0.73);
+        }
+
+        a:hover {
+            color: rgb(151, 24, 45);
+        }
+
+        .slogan {
+            letter-spacing: 0px;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+            letter-spacing: 5px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            position: relative;
+            top: 40px;
+        }
+
+        .header {
+            background-color: rgb(233, 233, 233);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            padding: 10px;
+            height: 50px;
+        }
+
+        .nav__list {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav__item {
+            margin: 30px;
+        }
+
+        .title {
+            font-family: "Playwrite AU SA";
+            text-align: center;
+            font-size: 50px;
+            margin: 0;
+            top: 10px;
+            color: rgb(0, 0, 0);
+        }
+
+        .section-title {
+            font-size: 30px;
+            letter-spacing: 5px;
+            color: rgb(0, 0, 0);
+            margin: 40px;
+            text-align: center;
+        }
+
+        b,
+        i,
+        p {
+            font-weight: 400;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .product-card {
+            border: 1px solid #ccc;
+            height: 400px;
+            padding: 25px 10px 0px 10px;
+            margin: 0px 40px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+        }
+
+        hr {
+            border: 1px solid rgb(211, 211, 211);
+        }
+
+        .button {
+            background-color: rgb(234, 234, 234);
+            color: rgb(49, 22, 8);
+            text-align: center;
+            text-decoration: none;
+            font-size: 17px;
+            border-radius: 20px;
+            font-family: "Raleway", sans-serif;
+        }
+
+        .button:hover {
+            -webkit-box-shadow: 0px 0px 26px -4px rgba(0, 0, 0, 0.93);
+            -moz-box-shadow: 0px 0px 26px -4px rgba(0, 0, 0, 0.93);
+            box-shadow: 0px 0px 26px -4px rgba(0, 0, 0, 0.93);
+            border-color: rgb(0, 0, 0);
+        }
+
+        .fixed-header {
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slogan">
+        <p>Trending now. Wearing always.</p>
+    </div>
+    <div class="fixed-header">
+        <header class="header">
+            <h1 class="title">Monn</h1>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="Магазин.html">главная</a> </li>
+                    <li class="nav__item"><a href="Каталог.html">каталог</a> </li>
+                    <li class="nav__item"><a href="О нас">о нас</a> </li>
+                    <li class="nav__item"><a href="Контакты">контакты</a> </li>
+                    <li class="nav__item"><a href="Корзина">корзина</a> </li>
+                </ul>
+            </nav>
+        </header><br>
+    </div>
+    <main>
+        <hr>
+        <span>
+            <h3 class="section-title">Товары</h3>
+        </span>
+        <section class="products">
+            <article class="product-card">
+                <a href="джинсы.html">
+                    <img src="джинсы.jpg" width="150" height="200"><br>
+                </a>
+                <b>Джинсы</b><br>
+                <br>
+                <i>Плотный деним</i>
+                <p>4000 руб.</p>
+                <button class="button">Добавить в корзину</button>
+            </article>
+            <article class="product-card">
+                <a href="свитер.html">
+                    <img src="свитер.jpg" height="200" width="150"><br>
+                </a>
+                <b>Свитер</b><br>
+                <br>
+                <i>Базовый свитер</i>
+                <p>3000 руб.</p>
+                <button class="button">Добавить в корзину</button>
+            </article>
+            <article class="product-card">
+                <a href="блузка.html">
+                    <img src="блузка.jpg" height="200" width="150"><br>
+                </a>
+                <b>Блузка</b><br>
+                <br>
+                <i>Легкая блузка</i>
+                <p>4000 руб.</p>
+                <button class="button">Добавить в корзину</button>
+            </article>
+            <article class="product-card">
+                <a href="юбка.html">
+                    <img src="юбка.jpg" height="200" width="150"><br>
+                </a>
+                <b>Юбка</b><br>
+                <br>
+                <i>Базовая юбка</i>
+                <p>5000 руб.</p>
+                <button class="button">Добавить в корзину</button>
+            </article>
+            <article class="product-card">
+                <a href="сумка.html">
+                    <img src="сумка.webp" height="200" width="150"><br>
+                </a>
+                <b>Сумка</b><br>
+                <br>
+                <i>Сумка-багет</i>
+                <p>2000 руб.</p>
+                <button class="button">Добавить в корзину</button>
+            </article>
+            <article class="product-card">
+                <a href="балетки.html">
+                    <img src="балетки.webp" height="200" width="150"><br>
+                </a>
+                <b>Балетки</b><br>
+                <br>
+                <i>Балетки под замшу</i>
+                <p>3000 руб.</p>
+                <button class="button">Добавить в корзину</button>
+            </article>
+            <article class="product-card">
+                <a href="футболка.html">
+                    <img src="футболка.jpg" width="150" height="200"><br>
+                </a>
+                <b>Футболка</b><br>
+                <br>
+                <i>1+1</i>
+                <p>2000 руб.</p>
+                <button class="button">Добавить в корзину</button>
+            </article>
+            <article class="product-card">
+                <a href="топ.html">
+                    <img src="топ.jpg" height="200" width="150"><br>
+                </a>
+                <b>Топ</b><br>
+                <br>
+                <i>1+1</i>
+                <p>1500 руб.</p>
+                <button class="button">Добавить в корзину</button>
+            </article>
+            <article class="product-card">
+                <a href="пиджак.html">
+                    <img src="пиджак.jpg" height="200" width="150"><br>
+                </a>
+                <b>Пиджак</b><br>
+                <br>
+                <i>Успейте купить</i>
+                <p><del>7000 руб.</del> 4000 руб.</p>
+                <button class="button">Добавить в корзину</button>
+            </article>
+            <article class="product-card">
+                <a href="куртка.html">
+                    <img src="куртка.jpg" height="200" width="150"><br>
+                </a>
+                <b>Куртка</b><br>
+                <br>
+                <i>Успейте купить</i>
+                <p><del>10000 руб.</del> 5000 руб.</p>
+                <button class="button">Добавить в корзину</button>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <hr>
+        <a href="mailto:Monn@mail.com">Monn@mail.com</a>
+        <a href="tel:+79999999999">+79999999999</a>
+        <p>Sight designed by:</p>
+        <br>
+        <p>&copy 2024-2025 Все права защищены</p>
+    </footer>
+</body>
+
+</html>
